@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotas DF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Para onde você deseja ir?</h1>
+    </header>
+    <section>
+        <div id="res">
+            Nosso app de rotas permite mostrar quais são as cidades percorridas
+            para chegar de um destino ao outro. Faça sua pesquisa. <br><br>
+            Preencha os dados abaixo para obter o caminho:
+        </div> 
+        <div>
+            <p style="font-size: medium;">De:
+                <select id="locinicial">
+                    <option value=""></option>
+                    <option value="ac">Aguas Claras</option>
+                    <option value="arn">Arniqueiras</option>
+                    <option value="an">Asa Norte</option>
+                    <option value="as">Asa Sul</option>
+                    <option value="braz">Brazlandia</option>
+                    <option value="cand">Candangolandia</option>
+                    <option value="cei">Ceilandia</option>
+                    <option value="cn">Cruzeiro Novo</option>
+                    <option value="em">Eixo Monumental</option>
+                    <option value="gma">Gama</option>
+                    <option value="gr">Guara</option>
+                    <option value="jb">Jardim Botanico</option>
+                    <option value="lp">Lago Paranoa</option>
+                    <option value="nb">Nucleo Bandeirante</option>
+                    <option value="pw">Park Way</option>
+                    <option value="pnt">Planaltina</option>
+                    <option value="rf1">Riacho Fundo I</option>
+                    <option value="rf2">Riacho Fundo II</option>
+                    <option value="rec">Recanto das Emas</option>
+                    <option value="smb">Samambaia</option>
+                    <option value="sm">Santa Maria</option>
+                    <option value="sia">SIA</option>
+                    <option value="sobr">Sobradinho</option>  
+                    <option value="sn">Sol Nascente</option>
+                    <option value="sud">Sudoeste</option>
+                    <option value="tg">Taguatinga</option>
+                    <option value="vp">Vicente Pires</option>
+                </select>
+                Para:
+                <select id="destino">
+                    <option value=""></option>
+                    <option value="ac">Aguas Claras</option>
+                    <option value="arn">Arniqueiras</option>
+                    <option value="an">Asa Norte</option>
+                    <option value="as">Asa Sul</option>
+                    <option value="braz">Brazlandia</option>
+                    <option value="cand">Candangolandia</option>
+                    <option value="cei">Ceilandia</option>
+                    <option value="cn">Cruzeiro Novo</option>
+                    <option value="em">Eixo Monumental</option>
+                    <option value="gma">Gama</option>
+                    <option value="gr">Guara</option>
+                    <option value="jb">Jardim Botanico</option>
+                    <option value="lp">Lago Paranoa</option>
+                    <option value="nb">Nucleo Bandeirante</option>
+                    <option value="pw">Park Way</option>
+                    <option value="pnt">Planaltina</option>
+                    <option value="rf1">Riacho Fundo I</option>
+                    <option value="rf2">Riacho Fundo II</option>
+                    <option value="rec">Recanto das Emas</option>
+                    <option value="smb">Samambaia</option>
+                    <option value="sm">Santa Maria</option>
+                    <option value="sia">SIA</option>
+                    <option value="sobr">Sobradinho</option>  
+                    <option value="sn">Sol Nascente</option>
+                    <option value="sud">Sudoeste</option>
+                    <option value="tg">Taguatinga</option>
+                    <option value="vp">Vicente Pires</option>
+                </select>
+                <input type="button" value="Pesquisar" onclick="pesquisar()" />
+            </p>            
+        </div>           
+    </section>
+    <footer>
+        <p>&copy; Ailamar Alves & Matheus Amaral</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

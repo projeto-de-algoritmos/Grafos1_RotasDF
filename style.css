@@ -1,0 +1,36 @@
+body {
+    /*background: rgba(134, 186, 235, 0.774);*/
+    background-image: url('img/maps.jpg');
+    background-size: cover;
+    font: normal 14pt Sans-serif;
+}
+header {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+img {
+    border-radius: 50%;
+    align-items: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 700px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(87, 86, 76, 0.493);
+}
+
+select {
+    margin-right: 60px;
+}
+
+div {
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+}
