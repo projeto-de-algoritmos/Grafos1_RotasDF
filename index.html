@@ -81,11 +81,35 @@
                 </select>
                 <input type="button" value="Pesquisar" onclick="pesquisar()" />
             </p>            
-        </div>           
+        </div>
+        <figure>
+            <img src="./img/maps1.jpg" alt="teste" width="500px" height="300px">
+            <canvas id="screen" width="500px" height="300px">
+                
+            </canvas>
+        </figure>           
     </section>
     <footer>
         <p>&copy; Ailamar Alves & Matheus Amaral</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        const screen = document.getElementById('screen')
+        const context = screen.getContext('2d')
+        context.lineWidth = 3
+        context.strokeRect(0, 0, 500, 300)
+
+        context.beginPath()
+        context.strokeStyle = 'blue'
+
+        context.moveTo(0, 80)
+        context.lineTo(168, 150)
+        context.lineTo(240, 160)
+        context.lineTo(440, 218)
+        context.lineTo(446, 180)
+        context.quadraticCurveTo(446, 155, 500, 160)
+        context.stroke()
+
+    </script>
 </body>
 </html>

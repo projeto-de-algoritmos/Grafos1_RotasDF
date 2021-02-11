@@ -10,8 +10,13 @@ header {
 }
 
 img {
-    border-radius: 50%;
+    position: absolute;
+    border-radius: 1%;
     align-items: center;
+}
+
+canvas {
+    position: relative;
 }
 
 section {
@@ -19,6 +24,7 @@ section {
     border-radius: 10px;
     padding: 20px;
     width: 700px;
+    height: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(87, 86, 76, 0.493);
 }
