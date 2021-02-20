@@ -14,13 +14,14 @@ Conteúdo da Disciplina: Grafos
 
 ## Sobre
 
-Essa aplicação consiste em retornar ao usuario o melhor caminho entre uma região administrativa e outra, de acordo com a distância e o tempo e também com as regiões vizinhas. 
+O objetivo do projeto é criar uma aplicação utilizando os conhecimentos sobre Grafos adquiridos nas aulas, para isso pensamos em algo bem conhecido do dia-a-dia das pessoas que 
+são os apps de serviço de pesquisa de mapas e rotas. Devido ao prazo de entrega, limitamos nosso escopo em cidades apenas do Distrito Federal. Nossa aplicação consiste em retornar ao usuário o melhor caminho entre uma região administrativa e outra, de acordo com a distância, tempo e também em relação às regiões vizinhas.
 
 ## Screenshots
 Adicione 3 ou mais screenshots do projeto em funcionamento.
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
+**Linguagem**: JavaScript <br>
 **Framework**: (caso exista)<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
