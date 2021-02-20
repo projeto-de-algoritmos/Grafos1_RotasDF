@@ -20,20 +20,22 @@
             <p style="font-size: medium;">De:
                 <select id="locinicial">
                     <option value=""></option>
-                    <option value="ac">Aguas Claras</option>
+                    <option value="ac">Águas Claras</option>
                     <option value="arn">Arniqueiras</option>
                     <option value="an">Asa Norte</option>
                     <option value="as">Asa Sul</option>
-                    <option value="braz">Brazlandia</option>
-                    <option value="cand">Candangolandia</option>
-                    <option value="cei">Ceilandia</option>
+                    <option value="braz">Brazlândia</option>
+                    <option value="cand">Candangolândia</option>
+                    <option value="cei">Ceilândia</option>
                     <option value="cn">Cruzeiro Novo</option>
                     <option value="em">Eixo Monumental</option>
+                    <option value="fc">Fercal</option>
                     <option value="gma">Gama</option>
-                    <option value="gr">Guara</option>
-                    <option value="jb">Jardim Botanico</option>
-                    <option value="lp">Lago Paranoa</option>
-                    <option value="nb">Nucleo Bandeirante</option>
+                    <option value="gr">Guará</option>
+                    <option value="jb">Jardim Botânico</option>
+                    <option value="ls">Lago Sul</option>
+                    <option value="nb">Núcleo Bandeirante</option>
+                    <option value="lp">Paranoá</option>
                     <option value="pw">Park Way</option>
                     <option value="pnt">Planaltina</option>
                     <option value="rf1">Riacho Fundo I</option>
@@ -41,30 +43,34 @@
                     <option value="rec">Recanto das Emas</option>
                     <option value="smb">Samambaia</option>
                     <option value="sm">Santa Maria</option>
+                    <option value="ss">São Sebastião</option>
                     <option value="sia">SIA</option>
                     <option value="sobr">Sobradinho</option>  
                     <option value="sn">Sol Nascente</option>
                     <option value="sud">Sudoeste</option>
                     <option value="tg">Taguatinga</option>
                     <option value="vp">Vicente Pires</option>
+                    <option value="vj">Varjão</option>
                 </select>
                 Para:
                 <select id="destino">
                     <option value=""></option>
-                    <option value="ac">Aguas Claras</option>
+                    <option value="ac">Águas Claras</option>
                     <option value="arn">Arniqueiras</option>
                     <option value="an">Asa Norte</option>
                     <option value="as">Asa Sul</option>
-                    <option value="braz">Brazlandia</option>
-                    <option value="cand">Candangolandia</option>
-                    <option value="cei">Ceilandia</option>
+                    <option value="braz">Brazlândia</option>
+                    <option value="cand">Candangolândia</option>
+                    <option value="cei">Ceilândia</option>
                     <option value="cn">Cruzeiro Novo</option>
                     <option value="em">Eixo Monumental</option>
+                    <option value="fc">Fercal</option>
                     <option value="gma">Gama</option>
-                    <option value="gr">Guara</option>
+                    <option value="gr">Guará</option>
                     <option value="jb">Jardim Botanico</option>
-                    <option value="lp">Lago Paranoa</option>
+                    <option value="ls">Lago Sul</option>
                     <option value="nb">Nucleo Bandeirante</option>
+                    <option value="lp">Paranoá</option>
                     <option value="pw">Park Way</option>
                     <option value="pnt">Planaltina</option>
                     <option value="rf1">Riacho Fundo I</option>
@@ -72,22 +78,24 @@
                     <option value="rec">Recanto das Emas</option>
                     <option value="smb">Samambaia</option>
                     <option value="sm">Santa Maria</option>
+                    <option value="ss">São Sebastião</option>
                     <option value="sia">SIA</option>
                     <option value="sobr">Sobradinho</option>  
                     <option value="sn">Sol Nascente</option>
                     <option value="sud">Sudoeste</option>
                     <option value="tg">Taguatinga</option>
                     <option value="vp">Vicente Pires</option>
+                    <option value="vj">Varjão</option>
                 </select>
-                <input type="button" value="Pesquisar" onclick="pesquisar()" />
-            </p>            
+                <input type="button" value="Pesquisar" onclick="pesquisar()"/>
+            </p>    
+            <br>
+            <div id="rotaPesquisada"></div> <!-- print do grafo -->
         </div>
         <figure>
             <img src="./img/maps1.jpg" alt="teste" width="500px" height="300px">
-            <canvas id="screen" width="500px" height="300px">
-                
-            </canvas>
-        </figure>           
+            <canvas id="screen" width="500px" height="300px"></canvas>
+        </figure>         
     </section>
     <footer>
         <p>&copy; Ailamar Alves & Matheus Amaral</p>
@@ -109,7 +117,6 @@
         context.lineTo(446, 180)
         context.quadraticCurveTo(446, 155, 500, 160)
         context.stroke()
-
     </script>
 </body>
 </html>
