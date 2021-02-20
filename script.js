@@ -2,16 +2,18 @@ function pesquisar() {
     var loc = document.getElementById('locinicial')
     var dest = document.getElementById('destino')
 
-    if (dest.value == loc.value) {
+    for (i = loc.value; i < dest.length; i++) {
         document.getElementById("destino").onclick = function() {
             dest.remove(i);
         };
     }
 
-    if (loc.value.length == '' || dest.value == '') {
+    if (loc.value == '' || dest.value == '') {
         window.alert('[ERROR] Não é possível pesquisar campos vazios. Verifique os dados e tente novamente!')
+    } else if (dest.value == loc.value) {
+        window.alert('[ERROR] Não é possível pesquisar campos iguais. Verifique os dados e tente novamente!')
     } else {
-        document.getElementById('rotaPesquisada').innerHTML = 'As rota selecionada passa pelas seguintes cidades: ';
+        document.getElementById('rotaPesquisada').innerHTML = 'A rota selecionada passa pelas seguintes cidades: ';
     }
 
 }

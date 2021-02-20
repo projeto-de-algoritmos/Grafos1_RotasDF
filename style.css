@@ -4,6 +4,7 @@ body {
     background-size: cover;
     font: normal 14pt Sans-serif;
 }
+
 header {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -11,12 +12,11 @@ header {
 
 img {
     position: absolute;
-    border-radius: 1%;
-    align-items: center;
+    align-items: right;
 }
 
 canvas {
-    position: relative;
+    position: absolute;
 }
 
 section {
