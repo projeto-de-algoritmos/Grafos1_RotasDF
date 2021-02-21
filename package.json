@@ -1,0 +1,22 @@
+{
+  "name": "rotas-back",
+  "version": "1.0.0",
+  "description": "Número da Lista: 1  \r Conteúdo da Disciplina: Grafos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projeto-de-algoritmos/Grafos1_RotasDF.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projeto-de-algoritmos/Grafos1_RotasDF/issues"
+  },
+  "homepage": "https://github.com/projeto-de-algoritmos/Grafos1_RotasDF#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

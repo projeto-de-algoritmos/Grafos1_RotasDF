@@ -3,13 +3,15 @@ const cities = require('./data/cities');
 const routes = require('./data/citiesRoutes');
 const BFS = require('./searchs/BFS');
 
-var http = require('http');
-var fs = require('fs');
+const express = require('express');
+const app = express();
+app.use(express.json());
 
 function calcDistance(graph){    
     let keys = [ '_distance', '_time' ]; // key[0] = distance, key[1] = time
     let totalDistance = graph._nodes[0]._edges[0]._weight[keys[0]];
     let totalTime = graph._nodes[0]._edges[0]._weight[keys[1]];
+
 }
 
 const graph = new Graph();
@@ -20,38 +22,15 @@ cities.forEach(city => {
 routes.forEach(route => {
     graph.addEdge(route[0], route[1], route[2]);
 });
+let taguaGraph = BFS(graph, 'Taguatinga', 'Sobradinho');
 
 
-let taguaGraph = BFS(graph, 'Taguatinga');
-// graph.showGraph();
-// taguaGraph.showGraph();
-calcDistance(graph);
+app.post('/', (req, res) => {
+    const {origem, destino} = req.body;
+    // taguaGraph.showGraph();
+    // calcDistance(graph, 'Sobradinho');
+    let tmp = {caminho : ['Asa Norte', 'Planaltina'], pesos : {_distance: 31, _time: 33}}
+    return res.json(tmp);
+})
 
-
-var link = document.createElement('link');  
-  
-// set the attributes for link element 
-   link.rel = 'stylesheet';  
-
-link.type = 'text/css'; 
-
-link.href = 'style.css';  
-
-// Get HTML head element to append  
-// link element to it  
-document.getElementsByTagName('HEAD')[0].appendChild(link); 
-
-function onRequest(request, response) {
-    response.writeHead(200, {'Content-Type': 'text/html'});
-    fs.readFile('./index.html', null, (error, data) =>  {
-        if(error) {
-            response.writeHead(404);
-            response.write('File not found!');
-        } else {
-            response.write(data);
-        }
-        response.end();
-    })
-}
-
-http.createServer(onRequest).listen(8000);
+app.listen(8000, () => console.log("hugao mama mia."))

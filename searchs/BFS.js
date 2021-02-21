@@ -23,8 +23,8 @@ function Dequeue(queue) {
 }
 
 
-// BFS(graph, 'taguatingua');
-function BFS(graph, root) {
+// BFS(graph, 'Taguatinga', 'Sobradinho');
+function BFS(graph, root, end) {
   let treeGraph = new Graph;
   cities.forEach(city => {
     treeGraph.addNode(city[0], city[1], city[2]);
@@ -38,6 +38,9 @@ function BFS(graph, root) {
     
     currentCity = Dequeue(citiesQueue);
     // console.log(currentCity);
+    if(currentCity === end){
+      console.log(cities)
+    }
 
     let currentNode = graph._nodes.find(node =>  // nos conectados com o no corente
       node._label === currentCity
