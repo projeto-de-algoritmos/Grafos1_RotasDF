@@ -29,16 +29,21 @@ function pesquisar() {
         document.getElementById('rotaPesquisada').innerHTML = 'A rota selecionada passa pelas seguintes cidades: ';
     }
 
-    let dados = {	
+    let data = {	
         origem : "Taguatinga", 
         destino : "Sobradinho"
     };
-    fetch('http://localhost:8000/', {
-        method: 'POST',
-        body: JSON.stringify(dados)
-    })
-    .then(function(response) {
-        console.log(response);
-    });
+    let url = "http://localhost:8000/"
+    let a = $.ajax({
+        type: "POST",
+        url: url,
+        data: JSON.stringify(data),
+        contentType: "application/json",
+        success: ()=>{
+            console.log("deubom")
+        }
+      });
+
+    console.log(JSON.stringify(data));
 }
 

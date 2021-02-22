@@ -31,10 +31,16 @@ routes.forEach(route => {
 app.post('/', (req, res) => {
     const {origem, destino} = req.body;
     console.log(req.body);
-    let subGraph = BFS(graph, origem, destino);
-    // taguaGraph.showGraph();
-    let answer = DFS(subGraph, destino, origem)
-    return res.json({caminho : answer});
+    if(origem | destino)
+    {
+        let subGraph = BFS(graph, origem, destino);
+        // taguaGraph.showGraph();
+        let answer = DFS(subGraph, destino, origem)
+        return res.json({caminho : answer});
+    
+    }else{
+        return res.send(500);
+    }
 })
 
 app.listen(8000, () => console.log(""))
