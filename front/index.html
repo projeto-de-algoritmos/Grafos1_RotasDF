@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rotas DF</title>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="">
@@ -17,8 +18,10 @@
             Preencha os dados abaixo para obter o caminho:
         </div> 
         <div>
-            <p style="font-size: medium;">De:
-                <select id="locinicial">
+            <p style="font-size: medium;"> 
+                <i class="fa fa-dot-circle-o" aria-hidden="true"></i>
+                De: 
+                <select id="locinicial" autofocus>
                     <option value=""></option>
                     <option value="ac">Águas Claras</option>
                     <option value="arn">Arniqueiras</option>
@@ -52,6 +55,7 @@
                     <option value="vp">Vicente Pires</option>
                     <option value="vj">Varjão</option>
                 </select>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>  
                 Para:
                 <select id="destino">
                     <option value=""></option>
@@ -88,12 +92,11 @@
                     <option value="vj">Varjão</option>
                 </select>
                 <button id="searchBtn">Pesquisar</button>
-            </p>    
-            <br>
+            </p> 
             <div id="rotaPesquisada"></div> <!-- print do grafo -->
         </div>
         <figure>
-            <img src="./img/maps1.jpg" alt="teste" width="500px" height="300px">
+            <img src="assets/img/maps1.jpg" alt="teste" width="500px" height="300px">
             <canvas id="screen" width="500px" height="300px"></canvas>
         </figure>         
     </section>

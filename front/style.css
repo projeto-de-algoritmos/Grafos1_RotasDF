@@ -1,13 +1,18 @@
 body {
     /*background: rgba(134, 186, 235, 0.774);*/
-    background-image: url('./img/maps.jpg');
+    background-image: url('img/maps.jpg');
     background-size: cover;
-    font: normal 14pt Sans-serif;
+    font: normal 14pt serif;
 }
 
 header {
     text-align: center;
     color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: bisque;
+    text-shadow: 2px 0 0 #000;
 }
 
 img {
