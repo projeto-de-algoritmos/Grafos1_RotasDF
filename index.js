@@ -3,10 +3,19 @@ const cities = require('./data/cities');
 const routes = require('./data/citiesRoutes');
 const BFS = require('./searchs/BFS');
 const DFS = require('./searchs/DFS');
-
+const cors = require('cors');
 const express = require('express');
+
 const app = express();
+
 app.use(express.json());
+
+app.use((req, res, next) =>{
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE');
+    app.use(cors());
+    next()
+});
 
 const graph = new Graph();
 
@@ -21,6 +30,7 @@ routes.forEach(route => {
 
 app.post('/', (req, res) => {
     const {origem, destino} = req.body;
+    console.log(req.body);
     let subGraph = BFS(graph, origem, destino);
     // taguaGraph.showGraph();
     let answer = DFS(subGraph, destino, origem)

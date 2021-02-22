@@ -1,6 +1,6 @@
 body {
     /*background: rgba(134, 186, 235, 0.774);*/
-    background-image: url('img/maps.jpg');
+    background-image: url('./img/maps.jpg');
     background-size: cover;
     font: normal 14pt Sans-serif;
 }

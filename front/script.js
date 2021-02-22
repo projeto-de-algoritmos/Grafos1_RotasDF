@@ -5,9 +5,10 @@ $(document).ready(function(){
     searchButton = $("#searchBtn");
 
     searchButton.click(pesquisar);
-
-    console.log("asd")
+    
 })
+
+
 
 function pesquisar() {
 
@@ -28,5 +29,16 @@ function pesquisar() {
         document.getElementById('rotaPesquisada').innerHTML = 'A rota selecionada passa pelas seguintes cidades: ';
     }
 
+    let dados = {	
+        origem : "Taguatinga", 
+        destino : "Sobradinho"
+    };
+    fetch('http://localhost:8000/', {
+        method: 'POST',
+        body: JSON.stringify(dados)
+    })
+    .then(function(response) {
+        console.log(response);
+    });
 }
 
