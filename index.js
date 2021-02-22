@@ -19,7 +19,6 @@ routes.forEach(route => {
 
 
 
-console.log(resposta);
 app.post('/', (req, res) => {
     const {origem, destino} = req.body;
     let subGraph = BFS(graph, origem, destino);
