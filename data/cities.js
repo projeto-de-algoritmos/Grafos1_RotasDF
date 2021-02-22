@@ -26,9 +26,9 @@ cities = [["Taguatinga", 12, 46],
     ["Jardim Botanico", -10, -430],
     ["Planaltina", -10, -430],
     ["Sol Nascente", -10, -430]
-    ["Fercal", -10, -430]
-    ["Lago Sul", -10, -430]
-    ["Sao Sebastiao", -10, -430]
+    ["Fercal", -10, -430],
+    ["Lago Sul", -10, -430],
+    ["Sao Sebastiao", -10, -430],
     ["Varjao", -10, -430]];
 
 module.exports = cities;
