@@ -22,9 +22,13 @@ cities = [["Taguatinga", 12, 46],
     ["Asa Norte", -21, -43],
     ["Asa Sul", -10, -430],
     ["Eixo Monumental", -10, -430],
-    ["Lago Paranoa", -10, -430],
+    ["Paranoa", -10, -430],
     ["Jardim Botanico", -10, -430],
     ["Planaltina", -10, -430],
-    ["Sol Nascente", -10, -430]];
+    ["Sol Nascente", -10, -430]
+    ["Fercal", -10, -430]
+    ["Lago Sul", -10, -430]
+    ["Sao Sebastiao", -10, -430]
+    ["Varjao", -10, -430]];
 
 module.exports = cities;
