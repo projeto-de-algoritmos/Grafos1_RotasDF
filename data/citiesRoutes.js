@@ -29,13 +29,22 @@ routes = [["Taguatinga", "Aguas Claras", {_distance: 6.9, _time: 13}],
     ["Gama", "Santa Maria", {_distance: 9.3, _time: 13}],
     ["Gama", "Park Way", {_distance: 19, _time: 17}],
     ["Park Way", "Candangolandia", {_distance: 4.5, _time: 5}],
+    ["Park Way", "Lago Sul", {_distance: 11.6, _time: 15}],
+    ["Nucleo Bandeirante", "Lago Sul", {_distance: 12.9, _time: 18}],
+    ["Jardim Botanico", "Lago Sul", {_distance: 14.9, _time: 21}],
+    ["Jardim Botanico", "Sao Sebastiao", {_distance: 11.1, _time: 17}],
     ["Candangolandia", "Asa Sul", {_distance: 12, _time: 12}],
     ["Candangolandia", "Nucleo Bandeirante", {_distance: 3.3, _time: 5}],
     ["Asa Norte", "Eixo Monumental", {_distance: 4.2, _time: 4}],
+    ["Asa Norte", "Varjao", {_distance: 11.3, _time: 15}],
     ["Asa Norte", "Sobradinho", {_distance: 22, _time: 23}],
     ["Sobradinho", "Planaltina", {_distance: 23, _time: 24}],
+    ["Sobradinho", "Fercal", {_distance: 15.1, _time: 22}],
     ["Asa Sul", "Eixo Monumental", {_distance: 3.8, _time: 4}],
-    ["Eixo Monumental", "Lago Paranoa", {_distance: 9.7, _time: 15}],
-    ["Lago Paranoa", "Jardim Botanico", {_distance: 14, _time: 24}]];
+    ["Asa Sul", "Lago Sul", {_distance: 9.5, _time: 14}],
+    ["Eixo Monumental", "Paranoa", {_distance: 9.7, _time: 15}],
+    ["Eixo Monumental", "Lago Sul", {_distance: 9.4, _time: 15}],
+    ["Paranoa", "Jardim Botanico", {_distance: 14, _time: 24}]
+    ["Paranoa", "Varjao", {_distance: 21, _time: 20}]];
 
 module.exports = routes;
