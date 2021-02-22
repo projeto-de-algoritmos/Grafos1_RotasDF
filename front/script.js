@@ -1,4 +1,16 @@
+let searchButton;
+
+
+$(document).ready(function(){
+    searchButton = $("#searchBtn");
+
+    searchButton.click(pesquisar);
+
+    console.log("asd")
+})
+
 function pesquisar() {
+
     var loc = document.getElementById('locinicial')
     var dest = document.getElementById('destino')
 
@@ -17,3 +29,4 @@ function pesquisar() {
     }
 
 }
+

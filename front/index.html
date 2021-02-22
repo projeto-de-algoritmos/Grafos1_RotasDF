@@ -6,7 +6,7 @@
     <title>Rotas DF</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
         <h1>Para onde você deseja ir?</h1>
     </header>
@@ -87,7 +87,7 @@
                     <option value="vp">Vicente Pires</option>
                     <option value="vj">Varjão</option>
                 </select>
-                <input type="button" value="Pesquisar" onclick="pesquisar()"/>
+                <button id="searchBtn">Pesquisar</button>
             </p>    
             <br>
             <div id="rotaPesquisada"></div> <!-- print do grafo -->
@@ -100,6 +100,7 @@
     <footer>
         <p>&copy; Ailamar Alves & Matheus Amaral</p>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script>
         const screen = document.getElementById('screen')
