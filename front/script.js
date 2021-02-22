@@ -12,7 +12,7 @@ $(document).ready(function(){
 
 function pesquisar() {
 
-    var loc = document.getElementById('locinicial')
+    var loc = document.getElementById('origem')
     var dest = document.getElementById('destino')
 
     for (i = loc.value; i < dest.length; i++) {
@@ -29,21 +29,26 @@ function pesquisar() {
         document.getElementById('rotaPesquisada').innerHTML = 'A rota selecionada passa pelas seguintes cidades: ';
     }
 
+    var $origem = $('#origem');
+    var $destino = $('#destino');
+
+    console.log($origem);
     let data = {	
-        origem : "Taguatinga", 
-        destino : "Sobradinho"
+        origem : $origem.value, 
+        destino : $destino.value
     };
     let url = "http://localhost:8000/"
-    let a = $.ajax({
+    $.ajax({
         type: "POST",
         url: url,
         data: JSON.stringify(data),
         contentType: "application/json",
-        success: ()=>{
-            console.log("deubom")
+        success: (data)=>{
+            $.each(data, (i, value) => {
+                
+            })
         }
       });
 
-    console.log(JSON.stringify(data));
 }
 

@@ -26,7 +26,8 @@ let citiesQueue = []; // fila de nos
 
 // BFS(graph, 'Taguatinga');
 function DFS(graph, root, end) {
-  
+  citiesQueue = [];
+  visitedCities  = [];
   Enqueue(visitedCities, root);
   Enqueue(citiesQueue, root);
     
@@ -40,7 +41,6 @@ function DFSVisit(graph, current, end) {
     node._label === current
   );  
   // console.log(currentNode);
-
   let neighborCities = []; 
 
   currentNode._edges.map(edge => {

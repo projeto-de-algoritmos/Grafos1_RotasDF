@@ -17,25 +17,29 @@ app.use((req, res, next) =>{
     next()
 });
 
-const graph = new Graph();
 
-cities.forEach(city => {
-    graph.addNode(city[0], city[1], city[2]);
-});
-routes.forEach(route => {
-    graph.addEdge(route[0], route[1], route[2]);
-});
 
 
 
 app.post('/', (req, res) => {
     const {origem, destino} = req.body;
-    console.log(req.body);
-    if(origem | destino)
+    // console.log(req.body);
+    if(origem && destino)
     {
+        const graph = new Graph();
+
+        cities.forEach(city => {
+            graph.addNode(city[0], city[1], city[2]);
+        });
+        routes.forEach(route => {
+            graph.addEdge(route[0], route[1], route[2]);
+        });
+
         let subGraph = BFS(graph, origem, destino);
-        // taguaGraph.showGraph();
+        // subGraph.showGraph();
+
         let answer = DFS(subGraph, destino, origem)
+
         return res.json({caminho : answer});
     
     }else{
