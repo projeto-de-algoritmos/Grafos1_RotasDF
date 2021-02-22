@@ -32,21 +32,18 @@ function pesquisar() {
     var $origem = $('#origem');
     var $destino = $('#destino');
 
-    console.log($origem);
     let data = {	
-        origem : $origem.value, 
-        destino : $destino.value
+        origem : $origem[0].value, 
+        destino : $destino[0].value
     };
     let url = "http://localhost:8000/"
-    $.ajax({
+    let a = $.ajax({
         type: "POST",
         url: url,
         data: JSON.stringify(data),
         contentType: "application/json",
-        success: (data)=>{
-            $.each(data, (i, value) => {
-                
-            })
+        success: (res)=>{
+            console.log(res.caminho);
         }
       });
 
