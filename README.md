@@ -56,6 +56,8 @@ $ node .
 ## Uso 
 Selecione uma cidade no primeiro bloco, selecione uma cidade no segundo bloco e clique em pesquisar. O resultado vai ser uma boa rota da origem até o destino.
 
+[Vídeo de explicação do projeto](https://youtu.be/fhVnegHuK48)
+
 ## Outros 
 Por usar apénas BFS e DFS, não é possível a análise usando pesos de distância, assim, não calculando o melhor caminho real, e sim, o melhor caminho do grafo sem pesos.
 
