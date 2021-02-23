@@ -15,10 +15,19 @@ Conteúdo da Disciplina: Grafos
 ## Sobre
 
 O objetivo do projeto é criar uma aplicação utilizando os conhecimentos sobre Grafos adquiridos nas aulas, para isso pensamos em algo bem conhecido do dia-a-dia das pessoas que 
-são os apps de serviço de pesquisa de mapas e rotas. Devido ao prazo de entrega, limitamos nosso escopo em cidades apenas do Distrito Federal. Nossa aplicação consiste em retornar ao usuário o melhor caminho entre uma região administrativa e outra, de acordo com a distância, tempo e também em relação às regiões vizinhas.
+são os apps de serviço de pesquisa de mapas e rotas. Devido ao prazo de entrega, limitamos nosso escopo em cidades apenas do Distrito Federal. Nossa aplicação consiste em retornar ao usuário o melhor caminho entre uma região administrativa e outra em relação às regiões vizinhas.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+- Página inicial <br>
+![Home](./front/assets/img/screenshots/home.png)
+
+- Cidades <br>
+![lista de cidades](./front/assets/img/screenshots/listaCidades.png)
+
+- Pesquisa <br>
+![Pesquisa](./front/assets/img/screenshots/pesquisa.png)
+
 
 ## Instalação 
 **Linguagem**: JavaScript <br>

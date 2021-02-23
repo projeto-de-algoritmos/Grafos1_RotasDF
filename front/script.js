@@ -1,14 +1,11 @@
 let searchButton;
 
-
 $(document).ready(function(){
     searchButton = $("#searchBtn");
 
     searchButton.click(pesquisar);
     
 })
-
-
 
 function pesquisar() {
 
@@ -30,7 +27,7 @@ function pesquisar() {
         var $destino = $('#destino');
         var $rota = $('#rotaPesquisada');
 
-        $rota[0].innerHTML = '<p>A rota selecionada passa pelas seguintes cidades: </p>';
+        $rota[0].innerHTML = 'A rota selecionada passa pelas seguintes cidades respectivamente: ';
         console.log($rota);
         let data = {	
             origem : $origem[0].value, 
@@ -47,12 +44,11 @@ function pesquisar() {
                 console.log(cidades[cidades.length-1]);
                 let count = 1;
                 for(let i = cidades.length-1; i >= 0; i--){
-                    $rota[0].innerHTML += (`<p>${count++}. ${cidades[i]}</p>`);
+                    $rota[0].innerHTML += (`<h5> <b>${count++}. <b> ${cidades[i]}</h5>`);
                 }
 
             }
         });
     }
-
 }
 

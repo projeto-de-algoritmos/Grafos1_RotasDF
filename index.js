@@ -17,15 +17,10 @@ app.use((req, res, next) =>{
     next();
 });
 
-
-
-
-
 app.post('/', (req, res) => {
     const {origem, destino} = req.body;
 
-    if(req.body)
-    {
+    if(req.body) {
 
         const graph = new Graph();
 
@@ -43,7 +38,7 @@ app.post('/', (req, res) => {
 
         return res.json({caminho : answer});
     
-    }else{
+    } else {
         console.log("deu ruim");
         return res.send(500);
     }
