@@ -46,7 +46,7 @@ function pesquisar() {
                 let cidades = res.caminho;
                 console.log(cidades[cidades.length-1]);
                 let count = 1;
-                for(let i = cidades.length-1; i > 0; i--){
+                for(let i = cidades.length-1; i >= 0; i--){
                     $rota[0].innerHTML += (`<p>${count++}. ${cidades[i]}</p>`);
                 }
 
