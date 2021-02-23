@@ -23,13 +23,34 @@ Adicione 3 ou mais screenshots do projeto em funcionamento.
 ## Instalação 
 **Linguagem**: JavaScript <br>
 **Framework**: Node JS <br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+
+Nosso projeto usa apenas NodeJS e um arquivo HTML como motores.
+
+1. Abra um terminal na pasta que vai ficar os arquivos e faça o clone do repositorio do GitHub para sua máquina:
+```
+$ git clone https://github.com/projeto-de-algoritmos/Grafos1_RotasDF.git
+```
+
+2. Segundo passo entrar na pasta do repositório e instalar as dependências do NodeJS (para isso você deve ter o NodeJS instalado):
+```
+$ cd ./Grafos1_RotasDF
+$ npm install
+```
+
+3. Inicie o seu servidor NodeJs com o comando:
+```
+$ node .
+```
+
+4. Vá na pasta 'front' do repositório e abra o index.html
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Selecione uma cidade no primeiro bloco, selecione uma cidade no segundo bloco e clique em pesquisar. O resultado vai ser uma boa rota da origem até o destino.
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+Por usar apénas BFS e DFS, não é possível a análise usando pesos de distância, assim, não calculando o melhor caminho real, e sim, o melhor caminho do grafo sem pesos.
+
+Para aperfeiçoar a resposta para o melhor caminho, devemos utilizar uma das funções do módulo Grafos 2.
 
 
 
