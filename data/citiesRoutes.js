@@ -44,7 +44,7 @@ routes = [["Taguatinga", "Aguas Claras", {_distance: 6.9, _time: 13}],
     ["Asa Sul", "Lago Sul", {_distance: 9.5, _time: 14}],
     ["Eixo Monumental", "Paranoa", {_distance: 9.7, _time: 15}],
     ["Eixo Monumental", "Lago Sul", {_distance: 9.4, _time: 15}],
-    ["Paranoa", "Jardim Botanico", {_distance: 14, _time: 24}]
+    ["Paranoa", "Jardim Botanico", {_distance: 14, _time: 24}],
     ["Paranoa", "Varjao", {_distance: 21, _time: 20}]];
 
 module.exports = routes;

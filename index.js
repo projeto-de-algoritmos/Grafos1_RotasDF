@@ -14,7 +14,7 @@ app.use((req, res, next) =>{
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", 'GET,PUT,POST,DELETE');
     app.use(cors());
-    next()
+    next();
 });
 
 
@@ -23,9 +23,10 @@ app.use((req, res, next) =>{
 
 app.post('/', (req, res) => {
     const {origem, destino} = req.body;
-    // console.log(req.body);
-    if(origem && destino)
+
+    if(req.body)
     {
+
         const graph = new Graph();
 
         cities.forEach(city => {
@@ -38,13 +39,14 @@ app.post('/', (req, res) => {
         let subGraph = BFS(graph, origem, destino);
         // subGraph.showGraph();
 
-        let answer = DFS(subGraph, destino, origem)
+        let answer = DFS(subGraph, destino, origem);
 
         return res.json({caminho : answer});
     
     }else{
+        console.log("deu ruim");
         return res.send(500);
     }
-})
+});
 
-app.listen(8000, () => console.log(""))
+app.listen(8000, () => console.log(""));
